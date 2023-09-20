@@ -1,0 +1,15 @@
+body { max-width:820px; background:black; color:lime; font-family:monospace }
+th { text-align:left; width:100px }
+td.date { text-align:center; width:100px; color:lightGrey }
+h1,h2 { margin-bottom:0 }
+h1::before { content:"_"; color:darkGrey; position: absolute; z-index: -1; animation:curseur 1s infinite }
+h2::after { content:" ( )"; color:darkGrey }
+li { margin-left:1em }
+a { color:lime }
+.commentaire { color:lightGrey }
+.commentaire::before { content:"# " }
+.fonction::before { content:"{"; color:darkGrey; margin-left:-1em; display:block }
+.fonction::after { content:"}"; color:darkGrey; margin-left:-1em; display:block }
+.fonction { margin-left:1em; font-size:1em; width:100% }
+.separateur { background:linear-gradient(90deg, lime 0%, transparent 100%) }
+@keyframes curseur { 5%,25% {background:darkGrey} 95% {background:transparent} }
