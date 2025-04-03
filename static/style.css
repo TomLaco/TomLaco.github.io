@@ -13,4 +13,4 @@ a { color:lime }
 .fonction { margin-left:1em; font-size:1em; width:100% }
 .separateur { background:linear-gradient(90deg, lime 0%, transparent 100%) }
 @keyframes curseur { 5%,25% {background:darkGrey} 95% {background:transparent} }
-@media print { body,a {color: black; max-width:1024px} h1::before,h2::after,.fonction::before,.fonction::after {display: none} }
+@media print { body {background: white; color: black; max-width: 1024px} a,.commentaire,.separateur,td.date {background: white; color:black} h1::before,h2::after,.fonction::before,.fonction::after {display: none} }
