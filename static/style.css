@@ -11,6 +11,7 @@ a { color:lime }
 .fonction::before { content:"{"; color:darkGrey; margin-left:-1em; display:block }
 .fonction::after { content:"}"; color:darkGrey; margin-left:-1em; display:block }
 .fonction { margin-left:1em; font-size:1em; width:100% }
-.separateur { background:linear-gradient(90deg, lime 0%, transparent 100%) }
+.separateur{height: 10px}
+.separateur::before { background:linear-gradient(90deg, lime 0%, transparent 100%); content: " "; height: 2px; width: 100%; display: block;}
 @keyframes curseur { 5%,25% {background:darkGrey} 95% {background:transparent} }
-@media print { body {background: white; color: black; max-width: 1024px} a,.commentaire,.separateur,td.date {background: white; color:black} h1::before,h2::after,.fonction::before,.fonction::after {display: none} }
+@media print { body {background: white; color: black; max-width: 1024px} a,.commentaire,.separateur::before,td.date {background: white; color:black} h1::before,h2::after,.fonction::before,.fonction::after {display: none} }
